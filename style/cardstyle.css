@@ -1,0 +1,416 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 85%);
+  --container-color: hsl(0, 0%, 100%);
+
+  --bodyy-color: #fdc800;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bodyy-color);
+  color: var(--text-color);
+
+}
+
+.main{
+  margin-top: 10px;
+}
+
+.clgname{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20%;
+}
+
+.clgname img{
+  width: 80px;
+  height: 80px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== NAVBAR==============*/
+.navbar{
+   background-color: #002147;
+   color: white;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   box-shadow: 0 4px 8px rgba(7, 7, 7, 0.979);
+   z-index: 3;
+}
+
+.navbar-links{
+   display: flex;
+   column-gap: 20px;
+}
+
+.navbar-links a{
+   text-decoration: none;
+   color: white;
+}
+
+.navbar-links a:hover{
+   text-decoration: underline;
+}
+
+.navbar-menu-toggle{
+   display: none;
+}
+
+.active{
+   background-color: white;
+   color: #002147;
+}
+
+.side-navbar{
+   background-color: #002147;
+   color: white;
+   width: 35%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   border-top-right-radius: 30px;
+   left:0;
+   padding: 20px;
+   display: none;
+   margin-top: -110px;
+   z-index: 3;
+}
+
+.side-navbar-link{
+   margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+   text-decoration: none;
+   color: white;
+}
+
+.side-navbar-links a:hover{
+   text-decoration: underline;
+}   
+
+
+/*FOOTER*/
+footer{
+   position: relative;
+   top: 150px;
+   padding: 30px;
+   background-color: #002147;
+   color: #fdc800;
+}
+
+.contactend{
+  display: none;
+}
+
+.iconssocial a{
+   position: relative;
+   top: 20px;
+   padding: 0 0 0 40px;
+   color: #fdc800;
+}
+
+@media only screen and (max-width:445px){
+   body{
+      width: 445px;
+   }
+   .clgname img{
+    margin-top: -10px;
+    margin-left: -80px;
+    height: 60px;
+    width: 60px;
+}
+.clgname div{
+    margin-top: -5px; 
+}
+.clgname .gasc{
+    font-size: 25px;
+    font-weight: bold;
+}
+.clgname .kar{
+    font-size: 10px;
+}
+   .navbar{
+      width: 445px;
+   } 
+   .gait1{
+    font-size: 10px;
+   }  
+   .navbar-links{
+      display: none;
+   }
+   .navbar-menu-toggle{
+      display: block;
+      position: relative;
+      right: 10px;
+   }
+   .fa-solid{
+      top: 20px;
+      right: 15px;
+   }
+   .side-navbar{
+    top: 110px;
+    height: 110vh;
+   }
+   footer{
+      top: 0;
+   }
+   .contactend{
+    position: relative;
+    left: -30px;
+    top: 10px;
+    background-color: yellowgreen;
+    display: block;
+    width: 445px;
+    height: 2px;
+   }
+   div#gaitdetails{
+    padding: 30px 30px 0 30px;
+   }
+   .gaitdetails .qutrixdetail{
+    h2{
+      font-size: 20;
+    }
+   }
+}
+
+  .gaitdetails{
+    padding: 60px 100px 0 100px;
+  }
+
+  .gaitdetails .gaitdetail{
+    h2{
+      text-align: center;
+      color: #fdc800;
+    }
+    background-color: #002147;
+    color: white;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .gaitdetails .qutrixdetail{
+    h2{
+      text-align: center;
+      color: #fdc800;
+    }
+    background-color: #002147;
+    color: white;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 20px;
+  }
+
+/*=============== CARD ===============*/
+.container {
+  display: grid;
+  place-items: center;
+  margin-inline: 1.5rem;
+  padding-block: 5rem;
+}
+
+.card__container {
+  display: grid;
+  row-gap: 3.5rem;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 328px;
+  border-radius: 1.5rem;
+  height: 300px;
+}
+
+.card__data {
+  width: 280px;
+  background-color: #1b2945;
+  /*background-color: rgb(100, 101, 99);*/
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  /*color: white;*/
+  color: #fdc800;
+  margin-bottom: .25rem;
+}
+
+.card__title {
+  color: #fdc800;
+  /*color: white;*/
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: #5ffd00;
+  /*color: white;*/
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+.rules{
+  width: 80%;
+  align-items: center;
+  text-align: justify;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__img {
+    width: 348px;
+  }
+  .card__data {
+    width: 316px;
+    padding-inline: 2.5rem;
+  }
+}

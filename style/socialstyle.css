@@ -1,0 +1,97 @@
+ul {
+position:relative;
+top:20px;
+
+}
+
+ul li {
+list-style: none;
+margin-bottom: 25px;
+width: 70%;
+}
+
+ul li a {
+position: relative;
+width:30px;
+height:30px;
+display:block;
+text-align:center;
+margin:0 10px;
+border-radius: 50%;
+padding: 6px;
+box-sizing: border-box;
+text-decoration:none;
+box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+background: linear-gradient(0deg, #ddd, #fff);
+transition: .5s;
+}
+
+ul li a:hover {
+box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+text-decoration:none;
+}
+
+ul li a .fab {
+width: 5%;
+height: 0%;
+display:block;
+background: linear-gradient(0deg, #fff, #ddd);
+border-radius: 50%;
+line-height: calc(51px - 12px);
+position: relative;
+top: -10px;
+font-size:18px;
+color: #262626;
+transition: .5s;
+}
+
+.iconssocial h4{
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: white;
+    margin-left: -5px;
+    position: relative;
+    top: -40px;
+    left: 30px;
+    width: 100px;
+}
+
+ul li:nth-child(1) h4:hover{
+color: #3b5998;
+}
+
+ul li:nth-child(2) h4:hover{
+color: #00aced;
+}
+
+ul li:nth-child(3) h4:hover{
+color: #dd4b39;
+}
+
+ul li:nth-child(4) h4:hover{
+color: #3b5998;
+}
+
+ul li:nth-child(5) h4:hover{
+color: #e4405f;
+}
+
+ul li:nth-child(1) a:hover .fab {
+color: #3b5998;
+}
+
+ul li:nth-child(2) a:hover .fab {
+color: #00aced;
+}
+
+ul li:nth-child(3) a:hover .fab {
+color: #dd4b39;
+}
+
+ul li:nth-child(4) a:hover .fab {
+color: #007bb6;
+}
+
+ul li:nth-child(5) a:hover .fab {
+color: #e4405f;
+}

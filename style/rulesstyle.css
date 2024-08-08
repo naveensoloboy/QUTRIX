@@ -1,0 +1,251 @@
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.rules{
+    width: 80%;
+    align-items: center;
+    text-align: justify;
+}
+
+ul{
+    padding:30px;
+}
+
+.remove{
+    height: 100%;
+    overflow: hidden;
+}
+
+.registerbtn{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.closerulebtn{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    position: relative;
+    right: -85%;
+    border-radius: 10px;
+    border: 1px solid #002147;
+}
+
+.poverlay{
+    background-color: #002147;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 5;
+    display: none;
+}
+.ppopup{
+    position: absolute;
+    z-index: 6;
+    background-color: #fdc800;
+    color: #002147;
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 100%;
+    display: none;
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+
+.qoverlay {
+    background-color: #002147;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 5;
+    display: none; /* Initially hidden */
+}
+
+.qpopup {
+    position: absolute;
+    z-index: 6;
+    background-color: #fdc800;
+    color: #002147;
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 100%;
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+
+.whoverlay {
+    background-color: #002147;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 5;
+    display: none; /* Initially hidden */
+}
+
+.whpopup {
+    position: absolute;
+    z-index: 6;
+    background-color: #fdc800;
+    color: #002147;
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 100%;
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+
+.wdoverlay {
+    background-color: #002147;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 5;
+    display: none; /* Initially hidden */
+}
+
+.wdpopup {
+    position: fixed;
+    z-index: 6;
+    background-color: #fdc800;
+    color: #002147;
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+
+.scoverlay {
+    background-color: #002147;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 5;
+    display: none; /* Initially hidden */
+}
+
+.scpopup {
+    position: fixed;
+    z-index: 6;
+    background-color: #fdc800;
+    color: #002147;
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+
+.moverlay {
+    background-color: #002147;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 5;
+    display: none; /* Initially hidden */
+}
+
+.mpopup {
+    position: fixed;
+    z-index: 6;
+    background-color: #fdc800;
+    color: #002147;
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    display: none; /* Initially hidden */
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+
+@media only screen and (max-width:445px){
+    ul{
+        padding: 20px;
+    }
+    .closerulebtn{
+        position: relative;
+        right: -60%;
+    }
+    .poverlay{
+        height: 2240px;
+    }
+    .qoverlay{
+        height: 2240px;
+    }
+    .qpopup{
+        top: 1400px;
+    }
+    .whoverlay{
+        height: 2240px;
+    }
+    .whpopup{
+        top: 1750px;
+    }
+    .wdoverlay{
+        height: 2240px;
+    }
+    .wdpopup{
+        top:2100px;
+        position: absolute;       
+    }
+    .scoverlay{
+        height: 2240px;
+    }
+    .scpopup{
+        top:2450px;       
+        position: absolute;
+    }
+    .moverlay{
+        height: 2600px;
+    }
+    .mpopup{
+        top:2820px;       
+        position: absolute;
+    }
+    .ppopup,.qpopup,.wdpopup,.whpopup,.mpopup,.scpopup{
+        left: 57%;
+        width: 95%;
+    }
+}
+    
