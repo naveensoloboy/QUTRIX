@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Courses Offered</title>
+    <!--<link rel="stylesheet" type="text/css" href="style\index.css">-->
+    <style type="text/css">
+        .table1,.table2,.table3{
+            border-spacing: 0;    
+        }
+
+        .table1{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        td{
+            color:rgba(17, 14, 4, 0.904);
+            padding: 5px;
+        }
+
+        th{
+            color:rgb(89, 22, 247);
+        }
+
+        .coursetable{
+            align-items: center;
+            padding: 0px 0px 0px 70px;
+        }
+
+        .divtable {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .divtable .divt1 h3{
+            display:none ;
+        }
+
+        @media only screen and (max-width:445px){
+            h2{
+                margin-left: 80px;
+            }
+            .divtable .divt2 h3{
+                display: none;
+            }
+            .divtable .divt1 h3{
+                display: block;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Courses Provided in our college</h2>
+    <div class="coursetable" id="table">
+            <div class="divtable">
+
+                <div class="divt1">
+                    <table class="table1" border="1">
+                    <tbody>
+                    <tr>
+                        <th colspan="2">Aided Programmes</th>
+                    </tr>
+                    <tr>
+                        <td>Under Graduate Course</td>
+                        <td>Post Graduate Course</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc. (Mathematics)</td>
+                        <td>M.Sc. (Mathematics)</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc. (Physics)</td>
+                        <td>M. C. A.</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc. (Chemistry)</td>
+                        <td>M. A. (Economics)</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc. (Botany)</td>
+                        <td>M. Com.</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc. (Computer Science)</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>B. A. (Economics)</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>B. B. A.</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>B. Com.</td>
+                        
+                    </tr>
+                    </tbody>
+                    </table>
+                    <div class="divt3">
+                    <table class="table3" border="1">
+                    <tbody>
+                        <tr>
+                            <th colspan="3">Research Programmes</th>
+                        </tr>
+                        <tr>
+                            <td>Departments</td>
+                            <td>M. Phil</td>
+                            <td>Ph. D.</td>
+                        </tr>
+                        <tr>
+                            <td>Tamil`</td>
+                            <td>Part Time</td>
+                            <td>Part Time</td>
+                        </tr>
+                        <tr>
+                            <td>English</td>
+                            <td>Part Time</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Economics</td>
+                            <td>Full Time/Part Time </td>
+                            <td>Full Time/Part Time </td>
+                        </tr>
+                        <tr>
+                            <td>Commerce</td>
+                            <td>Full Time/Part Time </td>
+                            <td>Full Time/Part Time </td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics</td>
+                            <td>Full Time/Part Time </td>
+                            <td>Full Time/Part Time </td>
+                        </tr>
+                        <tr>
+                            <td>Computer Science</td>
+                            <td>Full Time/Part Time </td>
+                            <td>Full Time/Part Time </td>
+                        </tr>
+                        <tr>
+                            <td>Management</td>
+                            <td>Part Time</td>
+                            <td>Part Time</td>
+                        </tr>
+                        <tr>
+                            <td>Political Science</td>
+                            <td>Part Time</td>
+                            <td>Part Time</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>Full Time/Part Time </td>
+                            <td>Full Time/Part Time </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                    <h3 style="margin-top: 20px;"><a href="https://www.gascgobi.ac.in/ugadmission24.html">Click here for UG Admission</a></h3>
+                    <h3 style="margin-top: 15px;"><a href="https://www.gascgobi.ac.in/pgadmit24.html">Click here for PG Admission</a><button onclick="closetable()" style="margin-left: 20%;width: 70px;height: 40px;border-radius: 10px;padding: 5px; font-size: large;font-weight: 900; color:yellow;background-color: red;">colse</button></h3>
+                </div>
+
+                <div class="divt2">
+                    <table class="table2" border="1">
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Un-Aided Programmes</th>
+                        </tr>
+                        <tr>
+                            <td>Under Graduate Course</td>
+                            <td>Post Graduate Course</td>
+                        </tr>
+                        <tr>
+                            <td>B.A. English Literature</td>
+                            <td>M.A. English Literature</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc. Physics</td>
+                            <td>M.A. English Literature</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc. Physics</td>
+                            <td>M.Sc. (Physics)</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc. (Mathematics)</td>
+                            <td>M.Sc. (Information Technology)</td>
+                        </tr>
+                        <tr>
+                            <td>B.Com.</td>
+                            <td>M.Sc. (Computer Science)</td>
+                        </tr>
+                        <tr>
+                            <td>B.Com. (Computer Applications)</td>
+                            <td>M.Com. (Computer Applications)</td>
+                        </tr>
+                        <tr>
+                            <td>B. B. A.</td>
+                            <td>M.Sc. (Chemistry)</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc. (Computer Science)</td>
+                            <td>PGDCA (One Year)</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc. (Information Technology)</td>
+                            <td>M.A.Tamil Literature</td>
+                        </tr>
+                        <tr>
+                            <td>B. C. A.</td>
+                            <td>M.B.A</td>
+                        </tr>
+                        <tr>
+                            <td>B. Sc. (Computer Technology)</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>B.Com. (Professional Accounting)    </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>B.A., (Tamil Literature)    </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>B.Com., (Banking and Insurance) </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>B.Com., (Business Analytics)    </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>B.Sc.Physical Education,Health Education & Sports   </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Certificate Programme in Library and Information Science (CLIS) - 1 Year    </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>B.Com.(Information Technology)*</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>*Subject to Affiliation by Bharathiar University    </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <h3 style="margin-top: 20px;"><a href="https://www.gascgobi.ac.in/ugadmission24.html">Click here for UG Admission</a></h3>
+                    <h3 style="margin-top: 15px;"><a href="https://www.gascgobi.ac.in/pgadmit24.html">Click here for PG Admission</a><button onclick="closetable()" style="margin-left: 20%;width: 70px;height: 40px;border-radius: 10px;padding: 5px; font-size: large;font-weight: 900; color:yellow;background-color: red;">colse</button></h3>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function closetable(){
+                event.preventDefault();
+                window.location.href = 'index.html'; // New target HTML file
+            }
+        </script>
+
+</body>
+</html>

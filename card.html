@@ -1,0 +1,268 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title></title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity=" sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="  anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style/cardstyle.css">
+      <link rel="stylesheet" href="style/rulesstyle.css">
+   </head>
+   <body>
+
+      <div class="main">
+         <div class="clgname">
+             <img src="images/logo.png" width="6%" height="6%">
+             <div class="clg">
+             <font class="gasc" face="ubuntu" size="8" color="darkred" weight="bolder">GOBI ARTS & SCIENCE COLLEGE</font><br>
+             <font class="kar" size="3" color="red" >KARATTADIPALAYAM,</font><font face="work sans" size="3" color="red" weight="bold"> GOBICHETTIPALAYAM - 638 453</font>
+             </div>
+         </div>
+      </div>
+
+      <nav class="navbar">
+         <h2 class="gait1">GAIT : (Gobi Arts Association of Information Technology)</h2>
+         <div class="navbar-links">
+         <p class="navbar-link"><a href="index.html"><b>Home</b></a></p>
+         <p class="navbar-link"><a href=""><b></b></a></p>
+         <p class="navbar-link"><a href=""><b></b></a></p>
+         <p class="navbar-link"><a href=""><b>About Us</b></a></p>
+         <p class="navbar-link"><a href="#footer"><b>Contact</b></a></p>
+         </div>
+         <div class="navbar-menu-toggle">
+            <p><i class="fa-solid fa-bars" id="toggle-button" onclick="showNavbar()"></i></p>
+         </div>
+      </nav>
+      <!--Side Navbar-->
+      <div class="side-navbar">
+          <p style="text-align: right;"><i class="fa-solid fa-xmark" id="remove-button" onclick="closeNavbar()"></i></p>
+          <div class="side-navbar-links">
+              <p class="side-navbar-link"><a href="index.html" id="side-navbar-home" onclick="closeNavbar()">Home</a></p>
+              <p class="side-navbar-link"><a href="#" id="" onclick="closeNavbar()"></a></p>
+              <p class="side-navbar-link"><a href="" onclick="closeNavbar()"></a></p>
+              <p class="side-navbar-link"><a href="" id="side-navbar-about" onclick="closeNavbar()">About Us</a></p>
+              <p class="side-navbar-link"><a href="#footer" id="side-navbar-contact" onclick="closeNavbar()">Contact</a></p>
+          </div>
+      </div>
+
+      <div id=main>
+
+         <div class="gaitdetails" id="gaitdetails">
+            <div class="gaitdetail">
+                <h2>GAIT :(Gobi Arts Association of Information Technology)</h2><br>
+                <h4>Gobi Arts Association of Information Technology is an association formed by the Department of Computer Science. It is a Forum through which the students improve their leadership qualities and organisational abilities. Guest Lectures, Seminars etc are also regularly organised through this outfit. GAIT conducts intercollegiate meet and intra collegiate meet (GAITFEST) every year.</h4>
+            </div>
+            
+            <div class="qutrixdetail" id="qutrixdetail">
+                <h2 >Intercollegiate meet (QUTRIX)</h2><br>
+                <h4>It is the annual technical extravaganza and the state level technical symposium conducted during the month of March every year. Qutrix invites students of Computer Science from various Institutions and Universities of TamilNadu and Pondichery. This helps the students of Computer Science and the participants to improve the communication skills, organisational abilities, leadership qualities and develop the spirit of team work among them.</h4>
+            </div>
+        </div>
+
+         <div class="rules">
+            <div class="pprule" id="pprule">
+               <div class="poverlay"></div>
+               <div class="ppopup">
+                     <u>PAPER PRESENTATION :</u>
+                     <ul>
+                       <li>One Team Per Department.</li>
+                       <li> Maximum of Three Participants per team (Equal participation is must).</li>
+                       <li>The paper must be IEEE format.</li>
+                       <li>Full paper of minimum 6 pages with an abstract, not exceeding 250 words along with Hard 
+                           Copies and One Soft copy through mail (qutrix2k2023@gmail.com) should be sent.</li>
+                       <li>Title, Author Name, Mobile Number, E-mail id, College name (for further communication) 
+                           abstract in a separate sheet</li>
+                       <li>Paper Size :A4, Font Name: Times New Roman, Font Size: Heading-14, Sub Heading: 12+BOLD, 
+                           Paragraph -12, Line spacing -1.5)</li>
+                       <li> Paper should reach us on or before 11 September, 2023 along with a Bonafide Certificate</li>
+                       <li>Selected teams will be informed through e-mail on 13 September 2023. Selected team should 
+                           participate in the event and should give a Power Point Presentation at the time of registration</li>
+                     </ul>
+                     <a href="ppregister.html"><button class="registerbtn" onclick="showRegister()">Register</button></a>
+                     <button class="closerulebtn" onclick="pcloserule()">Close</button>
+               </div>
+            </div>
+      
+            <div class="qrule">
+               <div class="qoverlay"></div>
+               <div class="qpopup">
+                   <u>Quiz :</u>
+                   <ul>
+                       <li>One team per Department.</li>
+                       <li>Two members per team.</li>
+                       <li>Prelims will be conducted.</li>
+                       <li>Five Teams will be selected for finals.</li>
+                       <li>FINALS: Technical Rounds.</li>
+                   </ul>
+                   <a href="qregister.html"><button class="registerbtn">Register</button></a>
+                   <button class="closerulebtn" onclick="qcloserule()">Close</button>
+               </div>
+            </div>
+      
+          <div class="whrule">
+             <div class="whoverlay"></div>
+             <div class="whpopup">
+                <u>WORD HUNT</u>
+                <ul>
+                    <li>One team per Department.</li>
+                    <li>Two members per team.</li>
+                    <li>Prelims will be conducted.</li>
+                    <li>5 Teams Selected to Finals.</li>
+                    <li>FINALS: Technical and Non-Technical Rounds.</li>
+                </ul>
+                <a href="whregister.html"><button class="registerbtn">Register</button></a>
+                <button class="closerulebtn" onclick="whcloserule()">Close</button>
+             </div>
+          </div>
+      
+          <div class="wdrule">
+             <div class="wdoverlay"></div>
+             <div class="wdpopup">
+                <u>WEB DESIGN</u>
+                <ul>
+                    <li>One team per Department.</li>
+                    <li>Two Members per team.</li>
+                    <li>Prelims will be conducted.</li>
+                    <li>5 Teams Selected to Finals.</li>
+                    <li>Participants need to do designing a web page. The best web page designers in the allocated time 
+                        will be declared as winners.</li>
+                </ul>
+                <a href="wdregister.html"><button class="registerbtn">Register</button></a>
+                <button class="closerulebtn" onclick="wdcloserule()">Close</button>
+             </div>
+          </div>
+
+          <div class="scrule">
+             <div class="scoverlay"></div>
+             <div class="scpopup">
+                <u>SOFTWARE CONTEST</u>
+                <ul>
+                    <li>One team per Department.</li>
+                    <li>Two Members per team.</li>
+                    <li>Prelims will be conducted. </li>
+                    <li>5 Teams Selected to Finals.</li>
+                    <li>FINALS: Participants need to debug the code for the given set of problems In Any Language. The 
+                        one who solves maximum number of problems correctly in the allotted time shall be declared as 
+                        winner.</li>
+                </ul>
+                <a href="scregister.html"><button class="registerbtn">Register</button></a>
+                <button class="closerulebtn" onclick="sccloserule()">Close</button>
+             </div>
+          </div>
+      
+          <div class="mrule">
+             <div class="moverlay"></div>
+             <div class="mpopup">
+                <u>MARKETING</u>
+                <ul>
+                    <li>One team per Department.</li>
+                    <li>Three members per team.</li>
+                    <li>Prelims will be conducted.</li>
+                    <li>5 Teams Selected to Finals.</li>
+                    <li>5 Minutes for Presentation.</li>
+                    <li>Explore your hidden Talent other than dance.</li>
+                </ul>
+                <a href="mregister.html"><button class="registerbtn">Register</button></a>
+                <button class="closerulebtn" onclick="mcloserule()">Close</button>
+             </div>
+          </div>
+         </div>
+      
+         <div class="container">
+          <div class="card__container">
+             <article class="card__article">
+                <img src="images/paper-presentation.gif" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <span class="card__description">Innovative research showcase</span>
+                   <h2 class="card__title">PAPER PRESENTATION</h2>
+                   <a href="#pprule" onclick="pshow()" class="card__button">Rules</a>
+                </div>
+             </article>
+         
+             <article class="card__article">
+                <img src="images/quiz.png" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <span class="card__description">Challenging, engaging, informative</span>
+                   <h2 class="card__title">Quiz</h2>
+                   <a href="#qrule" onclick="qshow()" class="card__button">Rules</a>
+                </div>
+             </article>
+         
+             <article class="card__article">
+                <img src="images/WordHunt.jpeg" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <span class="card__description">Linguistic treasure hunt</span>
+                   <h2 class="card__title">Word Hunt</h2>
+                   <a href="#whrule" onclick="whshow()" class="card__button">Rules</a>
+                </div>
+             </article>
+         
+             <article class="card__article">
+                <img src="images/web-design.webp" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <span class="card__description">Creative, responsive, intuitive.</span>
+                   <h2 class="card__title">Web Design</h2>
+                   <a href="#wdrule" onclick="wdshow()" class="card__button">Rules</a>
+                </div>
+             </article>
+         
+             <article class="card__article">
+                <img src="images/software-contest.png" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <span class="card__description">Code. Compete. Conquer.</span>
+                   <h2 class="card__title">Software Contest</h2>
+                   <a href="#scrule" onclick="scshow()" class="card__button">Rules</a>
+                </div>
+             </article>
+         
+             <article class="card__article">
+                <img src="images/marketing.jpg" alt="image" class="card__img">
+
+                <div class="card__data">
+                   <span class="card__description">Innovative, impactful, engaging.</span>
+                   <h2 class="card__title">Marketing</h2>
+                   <a href="#mrule" onclick="mshow()" class="card__button">Rules</a>
+                </div>
+             </article>
+          </div>
+         </div>
+      </div>
+
+      <footer class="footer" id="footer">
+         <div class="contact">
+            <font class="clgc" face="ubuntu" size="4">
+               <p style="position: relative;left: 0;">Contact:<br><br>
+               Dr.P.Prabhusundhar, Assistant Professor,<br>
+               Department of Computer Science,<br>
+               Gobi Arts and Science College (Autonomous )<br>
+               Karattadipalayam (PO).<br>
+               Gobichettipalayam - 638 453.<br>
+               <u>Contact No.</u> :<br>
+               96008 77997 (P.Prabhusundhar, Co-ordinator)<br>
+               99946 47984(M.V.Vasanthan, GAIT President)</p>
+            </font>                
+         </div>
+         <hr class="contactend">
+         <div class="iconssocial">
+                    <a href="https://www.facebook.com/profile.php?id=100092003531286&mibextid=ZbWKwL"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/GASCgobi36?t=fX_j8WUqzWYnQ1LG-jPoaA&s=09"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.gascgobi.ac.in"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/GASCgobi36?t=fX_j8WUqzWYnQ1LG-jPoaA&s=09"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/gobiartssciencecollege/"><i class="fab fa-instagram" aria-hidden="true"></i></a>               
+            </div>
+      </footer>
+
+      <script src="script/rulesscript.js"></script>
+
+   
+   </body>
+</html>
